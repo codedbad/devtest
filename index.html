@@ -4,26 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="styles/main.css" />
-    <title>SCSS | Test</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js"></script>
+    <title>Document</title>
   </head>
-  <body>
-    <div id="clip-path"></div>
+  <body onload="createDivs()">
     <header>
       <nav class="navbar">
         <ul>
-          <li><a class="navbar-bold" href="1">Home</a></li>
-          <li><a href="2">About</a></li>
-          <li><a href="3">Price</a></li>
-          <li><a href="4">Contacts</a></li>
+          <li>
+            <a class="navbar-tx-bold" href="#">
+              <span>=</span>
+              <span>Home</span>
+              <span class="navbar-hover">.</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>.</span>
+              <span>Service</span>
+              <span class="navbar-hover">.</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>.</span>
+              <span>Price</span>
+              <span class="navbar-hover">.</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>.</span>
+              <span>Contacts</span>
+              <span class="navbar-hover">.</span>
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="1"></section>
-      <section class="2"></section>
-      <section class="3"></section>
-      <section class="4"></section>
+      <div id="container"></div>
     </main>
     <footer></footer>
   </body>
