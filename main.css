@@ -1,9 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
-body,
-html {
-  height: 100%;
-}
-
 body {
   margin: 0;
   font-family: "Montserrat", monospace;
@@ -76,5 +71,9 @@ header .navbar-tx-bold {
   color: #ffffff;
   text-align: center;
   line-height: 250px;
+}
+
+#container div:nth-child(n):hover {
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */

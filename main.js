@@ -8,3 +8,8 @@ function createDivs() {
         divParent.appendChild(div);
     }
 }
+function removeDiv() {
+    var elem = document.getElementById('my-div-1');
+    elem.parentNode.removeChild(elem);
+    return false;
+}
