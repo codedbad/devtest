@@ -8,19 +8,19 @@
     <script src="main.js"></script>
     <title>HOME : Service</title>
   </head>
-  <body onload="createDivs()">
+  <body onload="createDivs()"></body>
     <header>
       <nav class="navbar">
         <ul>
           <li>
-            <a class="navbar-tx-bold" href="#" onclick="removeDiv()">
+            <a class="navbar-tx-bold" href="#" onclick="createDivs()">
               <span>=</span>
               <span>Home</span>
               <span class="navbar-hover">.</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#" onclick="removeDivs()">
               <span>.</span>
               <span>Service</span>
               <span class="navbar-hover">.</span>
@@ -44,6 +44,14 @@
       </nav>
     </header>
     <main>
+      <!-- <form class="form">
+        <input class="in-form" type="text">
+        <input class="in-form" type="text">
+        <input class="in-form" type="text">
+        <input class="in-form" type="text">
+        <input class="btn" type="submit" value="Submit">
+        <input class="btn" type="button" value="Reset" onclick="removeDivs()">
+      </form> -->
       <div id="container"></div>
     </main>
     <footer></footer>

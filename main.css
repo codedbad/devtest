@@ -1,7 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+body,
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: "Montserrat", monospace;
+  background-color: #6F7555;
 }
 
 header li {
@@ -37,7 +43,7 @@ header ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #f33f33;
+  background-color: #6F7555;
 }
 
 header span {
@@ -46,12 +52,11 @@ header span {
 
 header .navbar-tx-bold {
   font-weight: bold;
-  background-color: #f33f33;
+  background-color: #6F7555;
   padding: 10px 10px;
 }
 
 #container {
-  background-color: #f33f33;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,14 +71,52 @@ header .navbar-tx-bold {
 #container div:nth-child(n) {
   border: 1px solid #ffffff;
   margin: 5px;
-  height: 250px;
-  width: 250px;
+  height: 15.625rem;
+  width: 15.625rem;
   color: #ffffff;
   text-align: center;
   line-height: 250px;
 }
 
+#container .bck-first {
+  background-color: #B3BA94;
+}
+
+#container .bck-second {
+  background-color: #B5BA9E;
+}
+
+#container .bck-third {
+  background-color: #434C1C;
+}
+
 #container div:nth-child(n):hover {
   font-weight: bold;
+  font-size: 20px;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 70px 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form .in-form {
+  width: 250px;
+  height: 25px;
+  margin: 5px;
+  border: none;
+}
+
+.form .btn {
+  margin: 5px;
+  width: 250px;
+  height: 30px;
 }
 /*# sourceMappingURL=main.css.map */
