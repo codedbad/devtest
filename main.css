@@ -1,9 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
-body,
-html {
-  height: 100%;
-}
-
 body {
   margin: 0;
   font-family: "Montserrat", monospace;
@@ -20,7 +15,7 @@ header li a {
   font-family: "Montserrat";
   color: #ffffff;
   text-align: center;
-  padding: 16px;
+  padding: 10px;
   text-decoration: none;
 }
 
@@ -41,7 +36,7 @@ header ul {
   width: 100%;
   height: 62px;
   margin: 0;
-  padding: 0;
+  padding: 0px 20px;
   overflow: hidden;
   background-color: #6F7555;
 }
@@ -53,7 +48,7 @@ header span {
 header .navbar-tx-bold {
   font-weight: bold;
   background-color: #6F7555;
-  padding: 10px 10px;
+  padding: 10px;
 }
 
 #container {
@@ -62,7 +57,7 @@ header .navbar-tx-bold {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 70px 50px;
+  padding: 50px 50px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -95,28 +90,18 @@ header .navbar-tx-bold {
   font-size: 20px;
 }
 
-.form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 70px 50px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.form .in-form {
-  width: 250px;
-  height: 25px;
-  margin: 5px;
-  border: none;
-}
-
-.form .btn {
-  margin: 5px;
-  width: 250px;
-  height: 30px;
+.cb {
+  font-family: "Montserrat";
+  color: #ffffff;
+  background: #000;
+  width: 100px;
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+  padding: 0px 0px;
+  margin: 25px -43px;
+  position: fixed;
+  font-size: 12px;
+  font-weight: bold;
+  z-index: 999;
 }
 /*# sourceMappingURL=main.css.map */
