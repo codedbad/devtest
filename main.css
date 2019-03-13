@@ -98,11 +98,15 @@ header .navbar-tx-bold {
   -webkit-transform: rotateZ(90deg);
           transform: rotateZ(90deg);
   padding: 0px 0px;
-  margin: 42px -43px;
+  margin: 22px -43px;
   position: fixed;
   font-size: 12px;
   font-weight: bold;
   z-index: 999;
   text-align: center;
+}
+
+.cb::first-letter {
+  color: #FF0000;
 }
 /*# sourceMappingURL=main.css.map */
