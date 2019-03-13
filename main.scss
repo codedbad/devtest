@@ -1,23 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-$colors: (primary: #f33f33,
-primary-light: lighten(#f33f33, 3%),
-secondary: #c33126bd,
-text: #ffffff,
-third: #ff7373,
+$colors: (
+    primary: #6F7555,
+    primary-light: lighten(#f33f33, 3%),
+    secondary: #c33126bd,
+    text: #ffffff,
+    first: #B3BA94,
+    second: #B5BA9E,
+    third: #434C1C,
 );
-
 @function color($clip-path) {
     @return map-get($colors, $clip-path)
 }
-
-// body,
-// html {
-//     height: 100%;
-// }
-
-body {
+body, html {
     margin: 0;
     font-family: "Montserrat", monospace;
+    background-color: color(primary);
 }
 
 header {
@@ -29,7 +26,7 @@ header {
         font-family: "Montserrat";
         color: color(text);
         text-align: center;
-        padding: 16px;
+        padding: 10px;
         text-decoration: none;
 
     }
@@ -52,7 +49,7 @@ header {
         width: 100%;
         height: 62px;
         margin: 0;
-        padding: 0;
+        padding: 0px 20px;
         overflow: hidden;
         background-color: color(primary);
     }
@@ -64,27 +61,51 @@ header {
     .navbar-tx-bold {
         font-weight: bold;
         background-color: color(primary);
-        padding: 10px 10px;
+        padding: 10px;
     }
+
 }
 
 #container {
-    background-color: color(primary);
     display: flex;
     flex-wrap: wrap;
-    padding: 70px 50px;
+    padding: 50px 50px;
     justify-content: center;
 
     div:nth-child(n) {
         border: 1px solid color(text);
         margin: 5px;
-        height: 250px;
-        width: 250px;
+        height: 15.625rem;
+        width: 15.625rem;
         color: color(text);
         text-align: center;
         line-height: 250px;
     }
+    .bck-first {
+        background-color: color(first);
+    }
+    .bck-second {
+        background-color: color(second);
+    }
+    .bck-third {
+        background-color: color(third);
+    }
     div:nth-child(n):hover {
         font-weight: bold;
+        font-size: 20px;
     }
+}
+.cb {
+    font-family: "Montserrat";
+    color: color(text);
+    background: #000;
+    width: 100px;
+    transform: rotateZ(90deg);
+    padding: 0px 0px;
+    margin: 22px -43px;
+    position: fixed;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 999;
+    text-align: center;
 }

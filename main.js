@@ -8,7 +8,6 @@ function createDivs() {
         div.appendChild(divText);
         let divParent = document.getElementById("container");
         divParent.appendChild(div);
-
     }
 }
 function removeDivs() {
